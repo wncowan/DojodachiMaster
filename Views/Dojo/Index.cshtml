@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/css/styles.css"/>
+        <title>Dojodochi</title>
+    </head>
+    <body>
+        <div id="wrapper">
+
+            <div id="nav">
+                <h1>Dojodachi</h1>
+                <a href="https://github.com/">Github</a>
+                <a href="Index">Home</a>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <h5>Stats</5>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <h5>Fullness: 
+                            <span id="Stat">@ViewBag.fullness</span>
+                        </h5>
+                    </tr>
+                    <tr>
+                        <h5>Happiness:
+                            <span id="Stat">@ViewBag.happiness</span>
+                        </h5>
+                    </tr>
+                    <tr>
+                        <h5>Meals:
+                            <span id="Stat">@ViewBag.meals</span>
+                        </h5>
+                    </tr>
+                    <tr>
+                        <h5>Energy:
+                            <span id='Stat'>@ViewBag.energy</span>
+                        </h5>
+                    </tr>
+                    <tr>
+                    @{
+                        if(ViewBag.alive == "alive" && ViewBag.happiness > 15 && ViewBag.energy > 15 && ViewBag.fullness > 15){
+                        <img src="~/css/DogHappy.jpg" alt="happy">
+                        }
+                        else if(ViewBag.alive == "dead"){
+                        <img src="~/css/DogSick.jpg" alt="dead">
+                        }
+                        else if(ViewBag.alive == "alive"){
+                        <img src="~/css/DogMad.jpg" alt="angry">
+                        }
+                        } 
+                    </tr>
+                    <tr>
+                        <h6>@ViewBag.message</h6>
+                        <h6>@ViewBag.status</h6>
+                    </tr>
+                    <tr>
+                        <div>
+                            @{
+                                if(ViewBag.alive == "alive"){
+                                    <form action="/Feed" method="POST">
+                                        <input type="submit" value="Feed">
+                                    </form>
+                                    <form action="/Play" method="POST">
+                                        <input type="submit" value="Play">
+                                    </form>
+                                    <form action="/Work" method="POST">
+                                        <input type="submit" value="Work">
+                                    </form>
+                                    <form action="/Sleep" method="POST">
+                                        <input type="submit" value="Sleep">
+                                    </form>
+                                    <form action="/Clear" method="POST">
+                                        <input type="submit" value="Clear">
+                                    </form>
+
+                                }
+                                else if(ViewBag.alive == "dead"){
+                                    <form action="/Clear" method="POST">
+                                        <input type="submit" value="Clear">
+                                    </form>
+                                }
+                            }
+                        </div>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

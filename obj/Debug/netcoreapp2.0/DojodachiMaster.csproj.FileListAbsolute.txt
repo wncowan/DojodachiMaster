@@ -1,0 +1,10 @@
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/bin/Debug/netcoreapp2.0/DojodachiMaster.deps.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/bin/Debug/netcoreapp2.0/DojodachiMaster.runtimeconfig.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/bin/Debug/netcoreapp2.0/DojodachiMaster.runtimeconfig.dev.json
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/bin/Debug/netcoreapp2.0/DojodachiMaster.dll
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/bin/Debug/netcoreapp2.0/DojodachiMaster.pdb
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/obj/Debug/netcoreapp2.0/DojodachiMaster.csproj.CoreCompileInputs.cache
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/obj/Debug/netcoreapp2.0/DojodachiMaster.AssemblyInfoInputs.cache
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/obj/Debug/netcoreapp2.0/DojodachiMaster.AssemblyInfo.cs
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/obj/Debug/netcoreapp2.0/DojodachiMaster.dll
+/Users/wesleycowan/Desktop/DojoAssignments/netCore/DojodachiMaster/obj/Debug/netcoreapp2.0/DojodachiMaster.pdb
